@@ -1,10 +1,11 @@
+import { PropsWithChildren } from 'react';
+import { Inter } from '@next/font/google';
 import { GlassPane } from '@/components/GlassPane';
 import '@/styles/global.css';
-import { Inter } from '@next/font/google';
-import { PropsWithChildren } from 'react';
 
 const inter = Inter({
   variable: '--font-inter',
+  subsets: ['latin'],
 });
 
 type TAuthRootLayout = PropsWithChildren;
