@@ -1,9 +1,9 @@
-import '@/styles/global.css';
+import { PropsWithChildren } from 'react';
+import clsx from 'clsx';
 import { Inter } from '@next/font/google';
 // import {Sidebar} from '@/components/Sidebar';
-import clsx from 'clsx';
 import { GlassPane } from '@/components/GlassPane';
-import { PropsWithChildren } from 'react';
+import '@/styles/global.css';
 
 const inter = Inter({
   variable: '--font-inter',
