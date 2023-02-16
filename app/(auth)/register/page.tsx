@@ -1,5 +1,5 @@
 const Register = () => {
-  return null;
+  return <div>Register</div>;
 };
 
 export default Register;
