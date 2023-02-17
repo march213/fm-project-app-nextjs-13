@@ -1,6 +1,6 @@
+import { TASK_STATUS } from '@prisma/client';
 // import { hashPassword } from '@/lib/auth';
 import { db } from '@/lib/db';
-import { TASK_STATUS } from '@prisma/client';
 
 const getRandomTaskStatus = () => {
   const statuses = [TASK_STATUS.COMPLETED, TASK_STATUS.NOT_STARTED, TASK_STATUS.STARTED];
