@@ -1,6 +1,6 @@
 import clsx from 'clsx';
 
-export interface InputProps extends React.HTMLAttributes<HTMLInputElement> {
+export interface InputProps extends React.InputHTMLAttributes<HTMLInputElement> {
   className?: string;
 }
 
