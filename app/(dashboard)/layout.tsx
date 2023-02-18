@@ -1,9 +1,10 @@
-import { PropsWithChildren } from 'react';
-import clsx from 'clsx';
-import { Inter } from '@next/font/google';
-// import {Sidebar} from '@/components/Sidebar';
-import { GlassPane } from '@/components/GlassPane';
 import '@/styles/global.css';
+
+import { GlassPane } from '@/components/GlassPane';
+import { Inter } from '@next/font/google';
+import { PropsWithChildren } from 'react';
+import { Sidebar } from '@/components/Sidebar';
+import clsx from 'clsx';
 
 const inter = Inter({
   variable: '--font-inter',
@@ -17,7 +18,7 @@ export default function DashboardRootLayout({ children }: TDashboardRootLayout) 
       <head />
       <body className="h-screen w-screen candy-mesh p-6">
         <GlassPane className="w-full h-full p-6 flex align-center container mx-auto">
-          {/* <Sidebar /> */}
+          <Sidebar />
           <main className="w-full pl-6 h-full">{children}</main>
         </GlassPane>
       </body>
