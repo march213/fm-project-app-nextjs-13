@@ -1,6 +1,7 @@
 import { Greetings } from '@/components/Greetings';
 import { GreetingsSkeleton } from '@/components/GreetingsSkeleton';
 import Link from 'next/link';
+import { NewProject } from '@/components/NewProject';
 import { ProjectCard } from '@/components/ProjectCard';
 import { Suspense } from 'react';
 import { TaskCard } from '@/components/TaskCard';
@@ -44,7 +45,11 @@ export default async function Page() {
               </Link>
             </div>
           ))}
-          <div className="w-1/3 p-3">{/* new project here */}</div>
+          <div className="w-1/3 p-3">
+            <div className="w-1/3 p-3">
+              <NewProject />
+            </div>
+          </div>
         </div>
         <div className="mt-6 flex-2 grow w-full flex">
           <div className="w-full">
