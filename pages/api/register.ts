@@ -20,7 +20,6 @@ export default async function register(req: NextApiRequest, res: NextApiResponse
     });
 
     const jwt = await createJWT(user);
-
     res.setHeader(
       'Set-Cookie',
       serialize(process.env.COOKIE_NAME as string, jwt, {
